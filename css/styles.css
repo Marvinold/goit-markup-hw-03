@@ -70,27 +70,15 @@
 
 }
 
-  .site-nav .link,
-  .site-contacts .link {
-      color: var(--title-text-color);
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-  
-      cursor: pointer;
-  }
-  
-  .main-nav {
+.main-nav {
     display: flex;
     align-items: center;
-
+    
 }
 
 .site-nav {
     display: flex;
-
+    
 }
 
 .site-nav .item + .item {
@@ -125,19 +113,20 @@
 }
 
 
-  .site-nav .link:hover,
-  .site-nav .link:focus,
-  .site-contacts .link:hover,
-  .site-contacts .link:focus {
-      color: var(--accent-color);
-  }
-  .site-nav .link.current{
-      color: var(--accent-color);
-  }
-  
-  .site-contacts .link {
-      color: var(--primary-text-color);
-  }
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+.site-contacts .link {
+    color: var(--primary-text-color);
+}
+
   
       /* Герой */
   
@@ -232,9 +221,17 @@
 
 .work-examples {
     padding-top: 94px;
+    padding-bottom: 94px;
 
-   }
+}
 
+.examples {
+    display: flex;
+}
+
+.examples .item:not(:last-child) {
+    margin-right: 30px;
+}
   /* Команда */
 
   .section-team {
@@ -373,8 +370,7 @@
     flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--primary-border-color);
-    border-top: none;
+    
 }
 
 .project:nth-child(3n) {
@@ -387,11 +383,11 @@
 
 .project .desc {
     padding: 20px 24px;
-    
+
     border: 1px solid var(--primary-border-color);
     border-top: none;
 }
-
+  
 .projects .name {
     margin-top: 0;
     margin-bottom: 0;
